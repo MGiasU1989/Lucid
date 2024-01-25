@@ -1,0 +1,632 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, p ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-image: url("../images/HeroPic.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+    position: relative;
+    padding: 0px !important;
+}
+
+.nav-item {
+    padding: 0px 15px;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(0, 142, 214);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(0, 142, 214);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.nav-link:hover {
+    color: rgb(255, 255, 255);
+}
+
+.nav-link:hover::before {
+    width: 48%;
+}
+
+.nav-link:hover::after {
+    width: 48%;
+}
+
+header h5 {
+    color: rgb(2, 130, 196);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+header h1 {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    margin-top: 15px;
+}
+
+header p {
+    color: rgb(153, 153, 153);
+    font-size: 20px;
+    margin: 15px 0px;
+}
+
+.btn-download {
+    background: rgb(0, 142, 214);
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.btn-download:hover {
+    background-color: transparent;
+    border: 1px solid rgb(69, 68, 73);
+    color: rgb(255, 255, 255);
+}
+
+.phone {
+    position: absolute;
+    bottom: 0px;
+}
+
+.height {
+    min-height: 80vh;
+    align-items: center;
+}
+
+.features_section {
+    padding: 50px 0px;
+}
+
+.section_title {
+    text-align: center;
+    margin-bottom: 41px;
+}
+
+.section_title h1 {
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.section_title h3 {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #008ed6;
+}
+
+.section_title span {
+    display: block;
+    background: #008ed6;
+    width: 0px;
+    height: 3px;
+    margin: auto;
+    transition: .5s all ease-in-out;
+}
+
+.features_section:hover .section_title span{
+width: 50px;
+}
+
+.icon-box {
+    border: 1px solid #e5e5e5;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.icon-box i{
+
+color: #008ed6;
+
+font-size: 30px;
+}
+
+.features_section h2 {
+    text-align: center;
+    font-size: 24px;
+    margin: 18px 0;
+}
+
+.features_section p {
+    text-align: center;
+}
+
+.device-section{
+
+padding: 50px 0;
+}
+
+.device-section p{
+    
+text-align: left;
+}
+
+.device-section ul{
+    
+list-style: none;
+    
+margin-top: 20px;
+    
+padding: 0;
+}
+
+.device-section ul li{
+    
+display: flex;
+}
+
+.device-section ul li .list-icon{
+    
+width: 30px;
+    
+margin-bottom: 5px;
+    
+margin-right: 5px;
+    
+text-align: center;
+    
+color: #008ed6;
+}
+
+
+.device-section .section_title{
+    text-align: left;
+}
+
+.device-section .section_title span{
+    margin-left: 0 !important;
+}
+
+.device-section:hover .section_title span{
+    width: 50px;
+}
+
+.img img{
+    width: 70%;
+}
+
+.pricing-and-plans{
+    background-image: url(../images/officeback.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 39px 0;
+    position: relative;
+    z-index: 0;
+}
+
+.pricing-and-plans::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .8;
+    z-index: -1;
+    filter: blur(5);
+}
+
+.heading{
+
+text-align: center;
+
+color: #fff;
+
+margin-bottom: 50px;
+}
+
+.heading h2{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #008ed6;
+}
+
+.heading p{
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.pricing-and-plans p{
+
+color: #fff;
+}
+
+.client-info{
+
+display: flex;
+
+margin-top: 30px;
+
+align-items: center;
+}
+
+.client-imng{
+
+width: 70px;
+
+height: 70px;
+
+overflow: hidden;
+
+border-radius: 50%;
+}
+
+.client-details{
+
+color: #fff;
+
+margin-left: 30px;
+}
+
+.client-details h5{
+
+font-size: 15px;
+}
+
+.client-details h4{
+
+font-size: 18px;
+}
+
+.ad-section{
+background-color: black;
+padding: 30px 0;}
+
+.ad-section p{
+    
+color: #fff;
+    
+font-size: 25px;
+    
+margin: 0;
+}
+
+.ad-section p strong{
+    
+}
+
+.btn-ad {
+    background: rgb(0, 142, 214);
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.btn-ad:hover {
+    background-color: transparent;
+    border: 1px solid rgb(69, 68, 73);
+    color: rgb(255, 255, 255);
+}
+
+
+.pricing-section{
+
+margin: 50px 0;
+}
+
+.pricing-section .heading{
+
+}
+
+.price{
+
+border-bottom: 1px solid #e0e0e0;
+
+padding: 40px;
+}
+
+.price h1{
+    
+font-size: 60px;
+}
+
+.price sup{
+    
+}
+
+.price sup p{
+    
+}
+
+.price-table{
+
+text-align: center;
+
+border: 1px solid #e0e0e0;
+}
+
+.price-table:hover .price{
+    color: #fff;
+    background-color: #008ed6;
+    transition: .4s all ease-in-out;
+}
+
+.price-table:hover .price p{
+    color: #fff;
+}
+
+.price-table h2{
+    
+text-transform: uppercase;
+    
+padding: 20px 0;
+    
+border-bottom: 1px solid #e0e0e0;
+}
+
+.price-table h2:hover{
+    color: #008ed6;
+}
+
+.price-table h1 sup{
+    
+font-size: 40px;
+}
+
+.price-table p{
+    
+}
+
+.desc{
+
+padding: 30px;
+}
+
+.desc p{
+    
+}
+
+.btn-order{
+
+padding: 0;
+
+border: 1px solid #e0e0e0;
+
+padding: 15px 25px;
+
+margin-bottom: 35px;
+
+text-transform: uppercase;
+
+color: #008ed6;
+font-size: 18px;
+font-weight: 600;
+}
+
+.price-table:hover .btn-order{
+    background-color: #008ed6;
+    color: #fff;
+    border-color: #008ed6;
+}
+
+.contact-section{
+
+background: #ededed;
+
+padding: 70px 0;
+
+position: relative;
+
+padding-bottom: 300px;
+}
+
+.contact-section i{
+    
+}
+
+.contact-section p{
+    
+}
+
+.contact-section form{
+
+background: black;
+
+padding: 50px;
+
+position: absolute;
+
+left: 50%;
+
+transform: translate(-50%);
+
+width: 50%;
+
+bottom: -65px;
+}
+
+.contact-section form input{
+    
+background: transparent;
+    
+border-color: #ededed;
+    
+border-radius: 3px;
+}
+
+.contact-section form input::placeholder{
+    color: #ededed;
+}
+
+.contact-section form textarea{
+    
+background: transparent;
+    
+border-color: #ededed;
+    
+border-radius: 3px;
+}
+
+.contact-section form textarea::placeholder{
+    color: #ededed;
+}
+
+.contact-section form button{
+    
+background: #008ed6;
+    
+padding: 10px 50px;
+    
+border-radius: 3px;
+    
+color: #fff;
+    
+display: block;
+    
+margin-left: auto;
+}
+
+footer{
+
+background: black;
+
+padding: 50px;
+}
+
+footer .footer-design{
+}
+
+footer ul{
+
+display: flex;
+
+justify-content: center;
+}
+
+footer ul li{
+
+list-style: none;
+}
+
+
+footer ul li a{
+
+margin-right: 51px;
+}
+
+.cpr{
+}
+
+.cpr h3{
+    color: #444348;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;}
+
+.pricing-section:hover .section_title span{
+    width: 50px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 41px;
+}
+
+.heading h1 {
+    font-size: 36px;
+    margin: 14px 0;
+}
+
+.heading h3 {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #008ed6;
+}
+
+.heading span {
+    display: block;
+    background: #008ed6;
+    width: 0px;
+    height: 3px;
+    margin: auto;
+    transition: .5s all ease-in-out;
+}
+
+.pricing-and-plans:hover .heading span{
+width: 50px;
+}
+
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 41px;
+}
+
+.contact-heading h1 {
+    font-size: 36px;
+    margin: 14px 0;
+}
+
+.contact-heading h3 {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #008ed6;
+}
+
+.contact-heading span {
+    display: block;
+    background: #008ed6;
+    width: 0px;
+    height: 3px;
+    margin: auto;
+    transition: .5s all ease-in-out;
+}
+.contact-section:hover .contact-heading span{
+    width: 50px;
+}
+
+.contact-section i{
+
+color: #008ed6;
+
+font-size: 30px;
+
+margin-bottom: 25px;
+}
+
+.contact-section p{
+color: #999999;
+font-size: 18px;
+}
